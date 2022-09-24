@@ -4,14 +4,11 @@ $fontFamily: "Poppins";
 $primaryColor: dodgerblue;
 $darkColor: #202020;
 $darkGrey: #707070;
+$lightGrey: #cacaca;
 $bgColor: white;
 $primaryShadowColor: rgba(30, 143, 255, 0.3);
 
 // Basic Styles
-
-div {
-  padding: 4rem;
-}
 
 html {
   font-size: 62.5%;
@@ -55,6 +52,15 @@ p {
   color: $darkGrey;
 }
 
+// Links
+
+a {
+  text-decoration: none;
+  color: $darkColor;
+  font-size: 2rem;
+  padding: 1.2rem 1.4rem;
+}
+
 // Buttons
 
 %button {
@@ -62,7 +68,7 @@ p {
   color: $bgColor;
   outline: none;
   border: none;
-  padding: 1.4rem 2.4rem;
+  padding: 1.2rem 2.4rem;
   font-size: 1.8rem;
   font-weight: 500;
   border-radius: 5px;
@@ -90,4 +96,26 @@ button,
   background-color: $primaryColor;
   color: $bgColor;
   border: 1px solid $primaryColor;
+}
+
+// Navbar
+
+nav {
+  margin: 0.8rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(20px);
+}
+
+.nav--logo {
+  width: 70px;
+}
+
+.nav--items {
+  list-style: none;
+
+  a {
+    margin-left: 2.8rem;
+  }
 }
