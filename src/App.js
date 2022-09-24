@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AyurvedaDescription from "./components/AyurvedaDescription";
 import Specialities from "./components/Specialities";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <AyurvedaDescription />
       <Specialities />
+      <Reviews />
     </>
   );
 }

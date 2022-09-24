@@ -10,7 +10,7 @@ function Hero(props) {
         <p className="hero--description">
           A complete center for Spine and Joint problems
         </p>
-        <button className="btn ">Contact</button>
+        <button className="btn ">Contact Us</button>
       </div>
       <div className="brain">
         <svg

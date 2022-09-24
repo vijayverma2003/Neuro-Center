@@ -3,7 +3,7 @@ import React from "react";
 function Specialities(props) {
   return (
     <section className="block container specialities--page">
-      <h2 className="specialities--heading">Our Specialities</h2>
+      <h1 className="specialities--heading">Our Specialities</h1>
       <p className="specialities--description">
         If your problem is not listed below, Contact us for more details{" "}
       </p>
