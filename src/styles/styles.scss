@@ -1,0 +1,93 @@
+// Variables
+
+$fontFamily: "Poppins";
+$primaryColor: dodgerblue;
+$darkColor: #202020;
+$darkGrey: #707070;
+$bgColor: white;
+$primaryShadowColor: rgba(30, 143, 255, 0.3);
+
+// Basic Styles
+
+div {
+  padding: 4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $fontFamily, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $bgColor;
+}
+
+// Typography
+
+h1 {
+  font-size: 5.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: $darkGrey;
+}
+
+// Buttons
+
+%button {
+  background-color: $primaryColor;
+  color: $bgColor;
+  outline: none;
+  border: none;
+  padding: 1.4rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button,
+.btn {
+  @extend %button;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 10px 1px $primaryShadowColor;
+}
+
+.btn--secondary {
+  background-color: $bgColor;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  transition: background-color, color 0.1s ease-out;
+}
+
+.btn--secondary:hover {
+  background-color: $primaryColor;
+  color: $bgColor;
+  border: 1px solid $primaryColor;
+}
