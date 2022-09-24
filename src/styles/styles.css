@@ -158,4 +158,40 @@ nav {
   overflow: hidden;
 }
 
+.specialities--page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.specialities--heading,
+.specialities--description {
+  text-align: center;
+}
+
+.specialities--description {
+  font-size: 1.4rem;
+}
+
+.specialities {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(4, 200px);
+  margin-top: 8rem;
+  gap: 8rem;
+}
+
+.speciality--image {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.speciality--name {
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

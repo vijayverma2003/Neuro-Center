@@ -4,6 +4,7 @@ import "./styles/styles.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AyurvedaDescription from "./components/AyurvedaDescription";
+import Specialities from "./components/Specialities";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <AyurvedaDescription />
+      <Specialities />
     </>
   );
 }
