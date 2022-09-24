@@ -9,9 +9,6 @@ function Navbar(props) {
         <li>
           <a href="#">About</a>
           <a href="#">Reviews</a>
-          <a className="btn" href="#">
-            Contact
-          </a>
         </li>
       </ul>
     </nav>

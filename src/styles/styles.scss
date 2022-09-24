@@ -24,6 +24,14 @@ body {
   background-color: $bgColor;
 }
 
+.block {
+  margin: 4rem 0;
+}
+
+.container {
+  margin: 0 10rem;
+}
+
 // Typography
 
 h1 {
@@ -101,11 +109,11 @@ button,
 // Navbar
 
 nav {
-  margin: 0.8rem 4rem;
+  margin: 0.8rem 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
 }
 
 .nav--logo {
@@ -118,4 +126,28 @@ nav {
   a {
     margin-left: 2.8rem;
   }
+}
+
+// Hero
+
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero--heading {
+  text-transform: capitalize;
+}
+
+.hero--description {
+  margin-bottom: 5rem;
+}
+
+.brain {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }

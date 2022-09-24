@@ -10,6 +10,14 @@ body {
   background-color: white;
 }
 
+.block {
+  margin: 4rem 0;
+}
+
+.container {
+  margin: 0 10rem;
+}
+
 h1 {
   font-size: 5.4rem;
   font-weight: bold;
@@ -79,11 +87,11 @@ button,
 }
 
 nav {
-  margin: 0.8rem 4rem;
+  margin: 0.8rem 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
 }
 
 .nav--logo {
@@ -95,6 +103,28 @@ nav {
 }
 .nav--items a {
   margin-left: 2.8rem;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero--heading {
+  text-transform: capitalize;
+}
+
+.hero--description {
+  margin-bottom: 5rem;
+}
+
+.brain {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */
