@@ -127,4 +127,35 @@ nav {
   z-index: -1;
 }
 
+.ayurveda--description--container {
+  position: relative;
+}
+
+.ayurveda--description {
+  margin-top: 12rem;
+  backdrop-filter: blur(40px);
+  padding: 2rem 10rem;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.ayurveda--description h2 {
+  max-width: 50%;
+  line-height: 1.9;
+  font-weight: 500;
+  margin-bottom: 6rem;
+}
+.ayurveda--description .highlight2 {
+  color: dodgerblue;
+}
+
+.blobs {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=styles.css.map */
