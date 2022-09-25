@@ -11,7 +11,7 @@ function MeetTheDoctor(props) {
         <div className="doctor--description">
           <h3 className="doctor--name">Dr. Janak Raj</h3>
           <p className="doctor--qualification">
-            <i>BAMS</i>
+            <i>BAMS, MD</i>
           </p>
           <p className="doctor--views">
             "Hospitals have been making healthcare accessible to one and all and

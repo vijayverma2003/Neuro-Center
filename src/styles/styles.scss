@@ -139,6 +139,7 @@ nav {
 
 .hero--heading {
   text-transform: capitalize;
+  margin-top: 0;
 }
 
 .hero--description {
@@ -376,6 +377,12 @@ textarea {
   border-radius: 5px;
 }
 
+.form--button {
+  align-self: center;
+  width: min-content;
+  text-align: center;
+}
+
 .contact--right {
   max-width: 80%;
 }
@@ -389,7 +396,7 @@ textarea {
   position: absolute;
   font-size: 30rem;
   z-index: -1;
-  color: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.02);
   top: 0;
   margin: 0;
 }

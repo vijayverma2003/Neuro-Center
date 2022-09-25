@@ -18,6 +18,7 @@ function Footer(props) {
             type="text"
             placeholder="Write your message here..."
           />
+          <button className="form--button btn--secondary">Send</button>
         </form>
       </div>
       <div className="contact--right">
