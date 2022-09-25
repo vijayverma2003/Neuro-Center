@@ -2,7 +2,7 @@ import React from "react";
 
 function Reviews(props) {
   return (
-    <section className="block reviews--page">
+    <section className="reviews--page">
       <div className="reviews--main">
         <h1 className="reviews--heading">Reviews</h1>
         <p className="reviews--description">What people say about us?</p>
