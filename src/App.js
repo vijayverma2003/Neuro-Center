@@ -7,6 +7,7 @@ import AyurvedaDescription from "./components/AyurvedaDescription";
 import Specialities from "./components/Specialities";
 import Reviews from "./components/Reviews";
 import MeetTheDoctor from "./components/MeetTheDoctor";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Specialities />
       <Reviews />
       <MeetTheDoctor />
+      <Footer />
     </>
   );
 }
