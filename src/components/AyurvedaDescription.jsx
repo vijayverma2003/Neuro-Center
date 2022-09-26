@@ -1,15 +1,50 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function AyurvedaDescription(props) {
+  useEffect(() => {
+    gsap.fromTo(
+      ".highlight",
+      { color: "rgba(0, 0, 0, .4)" },
+      {
+        color: "black",
+        stagger: 1,
+        scrollTrigger: {
+          trigger: ".ayurveda--description--container",
+          scrub: true,
+          start: "-30%",
+          end: "50%",
+        },
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    gsap.to(".highlight", {
+      color: "rgba(0, 0, 0, .4)",
+      duration: 0.4,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: ".ayurveda--description--container",
+        scrub: true,
+        start: "-5%",
+        end: "70%",
+      },
+    });
+  }, []);
+
   return (
     <section className="ayurveda--description--container">
       <div className="ayurveda--description block">
-        <h2>
+        <h2 className="ayurveda--description--text">
           <span className="highlight">
             Ayurveda, a natural system of medicine, originated in India more
             than 3,000 years ago.
           </span>{" "}
-          <span className="highlight2">
+          <span className="highlight">
             Ayurvedic therapies include herbal medicines, special diets,
             meditation, yoga, massage, laxatives, enemas, and medical oils.
           </span>{" "}

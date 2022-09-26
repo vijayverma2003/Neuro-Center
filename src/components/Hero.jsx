@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
 
 function Hero(props) {
+  useEffect(() => {
+    gsap.fromTo(
+      ".hero--content",
+      { x: -400, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1.4, ease: "Power3.easeOut" }
+    );
+  }, []);
+
   return (
     <section className="hero block container">
       <div className="hero--content">

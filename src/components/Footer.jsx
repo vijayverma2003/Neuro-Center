@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Footer(props) {
+  useEffect(() => {
+    const timeline = gsap.timeline({
+      scrollTrigger: { trigger: ".contact", start: "-60%" },
+    });
+
+    timeline.fromTo(
+      [".large--contact--text", ".contact--left", ".contact--right"],
+      { x: -400, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1.4, ease: "Power3.easeOut" }
+    );
+  }, []);
+
   return (
     <footer className="block contact">
       <h1 className="large--contact--text">CONTACT</h1>
       <div className="contact--left">
         <h1 className="contact--heading">Contact Us</h1>
-        <p>
+        <p className="contact--description">
           Feel free to contact us and we will get <br />
           back to you as soon as we can.
         </p>

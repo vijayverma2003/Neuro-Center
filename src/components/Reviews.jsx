@@ -1,6 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Reviews(props) {
+  useEffect(() => {
+    gsap.fromTo(
+      [".reviews--main"],
+      { x: -400, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.4,
+        ease: "Power3.easeOut",
+        scrollTrigger: { trigger: ".reviews--page", start: "-80%" },
+      }
+    );
+
+    gsap.set(".review", { transformOrigin: "center" });
+
+    gsap.fromTo(
+      [".review"],
+      { scaleX: 0.5, scaleY: 0.6 },
+      {
+        scaleX: 0.7,
+        scaleY: 0.8,
+        duration: 1.4,
+        ease: "Power3.easeOut",
+        scrollTrigger: { trigger: ".reviews--page", start: "-80%" },
+      }
+    );
+  }, []);
+
   return (
     <section className="reviews--page">
       <div className="reviews--main">

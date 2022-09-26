@@ -167,17 +167,14 @@ nav {
   height: 100vh;
   display: flex;
   align-items: center;
+}
 
-  h2 {
-    max-width: 50%;
-    line-height: 1.9;
-    font-weight: 500;
-    margin-bottom: 6rem;
-  }
-
-  .highlight2 {
-    color: $primaryColor;
-  }
+.ayurveda--description--text {
+  max-width: 50%;
+  line-height: 1.9;
+  font-weight: 500;
+  margin-bottom: 6rem;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .blobs {
@@ -186,6 +183,7 @@ nav {
   z-index: -1;
   height: 100vh;
   overflow: hidden;
+  width: 100vw;
 }
 
 // Specialities
@@ -344,6 +342,7 @@ nav {
   position: relative;
   display: grid;
   grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+  overflow: hidden;
 
   p {
     font-size: 1.6rem;
