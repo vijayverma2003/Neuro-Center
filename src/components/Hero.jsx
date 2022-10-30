@@ -12,11 +12,9 @@ function Hero(props) {
 
   return (
     <>
-      <section className="hero block container">
+      <section className="hero container">
         <div className="hero--content">
-          <h1 className="hero--heading">
-            dukh bhanjan ayurvedic <br /> neuro center
-          </h1>
+          <h1 className="hero--heading">dukh bhanjan ayurvedic neuro center</h1>
           <p className="hero--description">
             A complete center for Spine and Joint problems
           </p>

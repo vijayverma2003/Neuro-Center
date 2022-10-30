@@ -31,10 +31,15 @@ body {
   margin: 1rem 0;
 }
 
+::selection {
+  background-color: #e9807460;
+}
+
 h1 {
   font-family: $fontPrimary;
   font-size: 4.4rem;
   margin: 1rem 0;
+  letter-spacing: 2px;
 }
 
 h4 {
@@ -49,18 +54,59 @@ p {
 // Sections
 
 .container {
-  max-width: 1240px;
   margin: 4rem auto;
+  max-width: 1240px;
+}
+
+// Buttons
+
+%basic-button {
+  background-color: transparent;
+  border: 2px solid $primaryColor;
+  color: $primaryColor;
+  cursor: pointer;
+  font-family: $fontSecondary;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.8rem 1.8rem;
+}
+
+button {
+  @extend %basic-button;
+  transition: box-shadow 0.2s ease-out;
+}
+
+button:hover {
+  box-shadow: 1px 1px 0 1px $primaryColor;
 }
 
 // Navbar
 
 nav {
-  max-width: 1240px;
   margin: 1rem auto;
+  max-width: 1240px;
 }
 
 .nav--logo {
-  width: 60px;
   height: 60px;
+  width: 60px;
+}
+
+// Hero
+
+.hero {
+  align-items: center;
+  display: flex;
+  min-height: 80vh;
+
+  .hero--description {
+    margin-bottom: 4rem;
+  }
+}
+
+.brain {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
 }

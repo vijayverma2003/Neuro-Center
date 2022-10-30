@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Hero />
+      <Hero />
       <AyurvedaDescription />
-      <Specialities />
+      {/* <Specialities />
       <Reviews />
       <MeetTheDoctor />
       <Footer /> */}

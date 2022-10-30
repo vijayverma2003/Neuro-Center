@@ -16,10 +16,15 @@ p, h4 {
   margin: 1rem 0;
 }
 
+::selection {
+  background-color: rgba(233, 128, 116, 0.3764705882);
+}
+
 h1 {
   font-family: "Bebas Neue";
   font-size: 4.4rem;
   margin: 1rem 0;
+  letter-spacing: 2px;
 }
 
 h4 {
@@ -27,18 +32,53 @@ h4 {
 }
 
 .container {
-  max-width: 1240px;
   margin: 4rem auto;
+  max-width: 1240px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #e85a4f;
+  color: #e85a4f;
+  cursor: pointer;
+  font-family: "Lora";
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.8rem 1.8rem;
+}
+
+button {
+  transition: box-shadow 0.2s ease-out;
+}
+
+button:hover {
+  box-shadow: 1px 1px 0 1px #e85a4f;
 }
 
 nav {
-  max-width: 1240px;
   margin: 1rem auto;
+  max-width: 1240px;
 }
 
 .nav--logo {
-  width: 60px;
   height: 60px;
+  width: 60px;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  min-height: 80vh;
+}
+.hero .hero--description {
+  margin-bottom: 4rem;
+}
+
+.brain {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=styles.css.map */
