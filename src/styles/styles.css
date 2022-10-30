@@ -3,368 +3,42 @@ html {
 }
 
 body {
+  background-color: #eae7dc;
   box-sizing: border-box;
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.block {
-  padding: 8rem 0;
-  overflow: visible;
-}
-
-.container {
-  margin: 0 10rem;
-}
-
-h1 {
-  font-size: 5.4rem;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 3.2rem;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 2.8rem;
-  font-weight: normal;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: normal;
-}
-
-p {
-  font-size: 2rem;
-  font-weight: 400;
-  color: #707070;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: #202020;
-  font-size: 2rem;
-  padding: 1.2rem 1.4rem;
-}
-
-button,
-.btn {
-  background-color: dodgerblue;
-  color: white;
-  outline: none;
-  border: none;
-  padding: 1.2rem 2.4rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-button,
-.btn {
-  transition: box-shadow 0.2s ease-out;
-}
-
-.btn:hover {
-  box-shadow: 0 4px 10px 1px rgba(30, 143, 255, 0.3);
-}
-
-.btn--secondary {
-  background-color: white;
-  color: dodgerblue;
-  border: 1px solid dodgerblue;
-  transition: background-color, color 0.1s ease-out;
-}
-
-.btn--secondary:hover {
-  background-color: dodgerblue;
-  color: white;
-  border: 1px solid dodgerblue;
-}
-
-nav {
-  margin: 0.8rem 10rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  backdrop-filter: blur(5px);
-}
-
-.nav--logo {
-  width: 70px;
-}
-
-.nav--items {
-  list-style: none;
-}
-.nav--items a {
-  margin-left: 2.8rem;
-}
-
-.hero {
-  height: 80vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.hero--heading {
-  text-transform: capitalize;
-  margin-top: 0;
-}
-
-.hero--description {
-  margin-bottom: 5rem;
-}
-
-.brain {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.ayurveda--description--container {
-  position: relative;
-}
-
-.ayurveda--description {
-  margin-top: 12rem;
-  backdrop-filter: blur(40px);
-  padding: 2rem 10rem;
-  overflow: hidden;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.ayurveda--description--text {
-  max-width: 50%;
-  line-height: 1.9;
-  font-weight: 500;
-  margin-bottom: 6rem;
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.blobs {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  height: 100vh;
-  overflow: hidden;
-  width: 100vw;
-}
-
-.specialities--page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 60vh;
-}
-
-.specialities--heading {
-  margin-bottom: 1.4rem;
-}
-
-.specialities--heading,
-.specialities--description {
-  text-align: center;
-}
-
-.specialities--description {
-  font-size: 1.4rem;
-  margin-top: 0;
-}
-
-.specialities {
-  display: grid;
-  grid-template: repeat(1, 1fr)/repeat(4, 200px);
-  margin-top: 8rem;
-  gap: 8rem;
-}
-
-.speciality--image {
-  width: 100%;
-  height: 200px;
-  background-color: rgb(240, 240, 240);
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 20px 2px rgba(30, 143, 255, 0.3);
-}
-
-.speciality--name {
-  text-align: center;
-}
-
-.reviews--page {
-  min-height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.reviews--main {
-  margin-left: 10rem;
-  width: 40vw;
-  background-color: white;
-}
-
-.reviews--heading {
-  margin-bottom: 1.4rem;
-}
-
-.reviews--description {
-  margin-top: 0;
-  margin-bottom: 4rem;
-}
-
-.reviews {
-  width: 50vw;
-  display: flex;
-  overflow: hidden;
-}
-
-.review {
-  border-radius: 16px;
-  min-width: 50vw;
-  height: 600px;
-  transform: scale(0.7, 0.8);
-  overflow: hidden;
-  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.07);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.review--content {
-  line-height: 1.6;
-  margin: 0rem 4rem 2rem;
-  font-size: 2.4rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 10;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.review--by {
-  font-size: 2.8rem;
-  text-align: right;
-  align-self: flex-end;
-  padding: 0 4rem;
-  font-weight: 500;
-}
-
-.doctor--page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.doctor--image {
-  width: 380px;
-  height: 420px;
-}
-
-.doctor--page--content {
-  margin-top: 12rem;
-  display: grid;
-  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
-  align-items: center;
-}
-
-.doctor--name {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.doctor--qualification {
-  font-size: 1.6rem;
-  margin-top: 0;
-}
-
-.doctor--views {
-  line-height: 1.8;
-  max-width: 85%;
-  margin-top: 4rem;
-}
-
-.contact {
-  margin-top: 20rem;
-  background-color: rgba(0, 0, 0, 0.009);
-  box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.1);
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-bottom: 2rem;
-  position: relative;
-  display: grid;
-  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
-  overflow: hidden;
-}
-.contact p {
-  font-size: 1.6rem;
-}
-.contact h3 {
-  margin-top: 4rem;
-}
-
-.contact--heading {
-  margin-bottom: 1rem;
-}
-
-.contact--form {
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-  margin-top: 6rem;
-}
-
-input,
-textarea {
-  padding: 1.4rem 1.8rem;
-  font-size: 2rem;
-  margin-bottom: 2.8rem;
-  resize: none;
-  border: 1px solid dodgerblue;
-  background-color: transparent;
-  outline: none;
-  border-radius: 5px;
-}
-
-.form--button {
-  align-self: center;
-  width: min-content;
-  text-align: center;
-}
-
-.contact--right {
-  max-width: 80%;
-}
-
-.opening--hours {
-  display: flex;
-  gap: 8rem;
-}
-
-.large--contact--text {
-  position: absolute;
-  font-size: 30rem;
-  z-index: -1;
-  color: rgba(0, 0, 0, 0.02);
-  top: 0;
   margin: 0;
 }
 
-.copyright {
-  color: rgb(152, 152, 152);
+p, h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Lora";
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  font-size: 4.4rem;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 4rem auto;
+}
+
+nav {
+  max-width: 1240px;
+  margin: 1rem auto;
+}
+
+.nav--logo {
+  width: 60px;
+  height: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -24,8 +24,8 @@ function Reviews(props) {
       [".review"],
       { scaleX: 0.5, scaleY: 0.6 },
       {
-        scaleX: 0.7,
-        scaleY: 0.8,
+        scaleX: window.innerWidth <= 768 ? 1.0 : 0.7,
+        scaleY: window.innerWidth <= 768 ? 1.0 : 0.8,
         duration: 1.4,
         ease: "Power3.easeOut",
         scrollTrigger: { trigger: ".reviews--page", start: "-80%" },
@@ -38,7 +38,6 @@ function Reviews(props) {
       <div className="reviews--main">
         <h1 className="reviews--heading">Reviews</h1>
         <p className="reviews--description">What people say about us?</p>
-        <button className="btn--secondary">Add Your Review</button>
       </div>
       <div className="reviews">
         <div className="review">

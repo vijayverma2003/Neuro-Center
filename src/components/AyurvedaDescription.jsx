@@ -25,12 +25,12 @@ function AyurvedaDescription(props) {
   useEffect(() => {
     gsap.to(".highlight", {
       color: "rgba(0, 0, 0, .4)",
-      duration: 0.4,
       stagger: 1,
+      ease: "Power3.easeOut",
       scrollTrigger: {
         trigger: ".ayurveda--description--container",
         scrub: true,
-        start: "-5%",
+        start: "-15%",
         end: "70%",
       },
     });
@@ -41,17 +41,23 @@ function AyurvedaDescription(props) {
       <div className="ayurveda--description block">
         <h2 className="ayurveda--description--text">
           <span className="highlight">
-            Ayurveda, a natural system of medicine, originated in India more
-            than 3,000 years ago.
+            Ayurveda, a natural system of medicine,{" "}
           </span>{" "}
           <span className="highlight">
-            Ayurvedic therapies include herbal medicines, special diets,
-            meditation, yoga, massage, laxatives, enemas, and medical oils.
+            originated in India more than 3,000 years ago.
+          </span>
+          <span className="highlight">
+            Ayurvedic therapies include herbal medicines, special diets,{" "}
           </span>{" "}
+          <span className="highlight">
+            meditation, yoga, massage, laxatives, enemas, and medical oils.
+          </span>
           <span className="highlight">
             Unlike, Allopathy which is a temporary solution for diseases,
-            Ayurveda provides a better for diagnosing diseases without any
-            side-effects.
+          </span>{" "}
+          <span className="highlight">
+            Ayurveda provides a better solution for diagnosing diseases without
+            any side-effects.
           </span>
         </h2>
       </div>

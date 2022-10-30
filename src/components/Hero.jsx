@@ -11,16 +11,18 @@ function Hero(props) {
   }, []);
 
   return (
-    <section className="hero block container">
-      <div className="hero--content">
-        <h1 className="hero--heading">
-          dukh bhanjan ayurvedic <br /> neuro center
-        </h1>
-        <p className="hero--description">
-          A complete center for Spine and Joint problems
-        </p>
-        <button className="btn ">Contact Us</button>
-      </div>
+    <>
+      <section className="hero block container">
+        <div className="hero--content">
+          <h1 className="hero--heading">
+            dukh bhanjan ayurvedic <br /> neuro center
+          </h1>
+          <p className="hero--description">
+            A complete center for Spine and Joint problems
+          </p>
+          <button className="btn hero--btn">Contact Us</button>
+        </div>
+      </section>
       <div className="brain">
         <svg
           width="463"
@@ -59,7 +61,7 @@ function Hero(props) {
           />
         </svg>
       </div>
-    </section>
+    </>
   );
 }
 

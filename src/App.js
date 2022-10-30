@@ -13,12 +13,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <AyurvedaDescription />
       <Specialities />
       <Reviews />
       <MeetTheDoctor />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
