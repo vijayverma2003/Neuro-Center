@@ -15,8 +15,8 @@ function App() {
       <Hero />
       <AyurvedaDescription />
       <Reviews />
-      <MeetTheDoctor />
-      <Footer />
+      {/* <MeetTheDoctor />
+      <Footer /> */}
     </>
   );
 }

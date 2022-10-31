@@ -5,6 +5,8 @@ $primaryColor: #e85a4f;
 $lightPrimaryColor: #e98074;
 $lightColor: rgba(0, 0, 0, 0.8);
 $extraLightColor: rgba(0, 0, 0, 0.02);
+$tertiaryColor: #d8c3a5;
+$lightTertiaryColor: #d8c3a560;
 
 $fontPrimary: "Bebas Neue";
 $fontSecondary: "Lora";
@@ -126,4 +128,60 @@ nav {
 
 .highlight {
   color: rgba(0, 0, 0, 0.404);
+}
+
+// Reviews
+
+.reviews--page {
+  margin: 14rem auto;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 8rem 0;
+}
+
+.review {
+  min-width: 360px;
+  padding: 2rem 4.8rem;
+  height: 360px;
+  background-color: $lightTertiaryColor;
+  border: 2px solid $tertiaryColor;
+  box-shadow: 2px 2px 0 2px $tertiaryColor;
+}
+
+.review--content {
+  font-size: 2rem;
+}
+
+.review--header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  h4,
+  p {
+    margin: 0;
+  }
+}
+
+.review--image {
+  border-radius: 30px;
+  height: 60px;
+  object-fit: cover;
+  width: 60px;
+}
+
+.review--problem {
+  @extend %paragraph-style;
+  background-color: $lightPrimaryColor;
+  border-radius: 16px;
+  color: $bgColor;
+  font-weight: 700;
+  margin-right: 2rem;
+  padding: 0.4rem 1rem;
 }

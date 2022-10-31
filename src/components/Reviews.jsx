@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import reviews from "../services/reviews.json";
+
+console.log(reviews);
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,40 +37,43 @@ function Reviews(props) {
   }, []);
 
   return (
-    <section className="reviews--page">
-      <div className="reviews--main">
-        <h1 className="reviews--heading">Reviews</h1>
-        <p className="reviews--description">What people say about us?</p>
-      </div>
+    <section className="reviews--page container">
+      <h1 className="reviews--heading">What people say about us?</h1>
       <div className="reviews">
+        {reviews["reviews"].map((review) => (
+          <div className="review">
+            <header className="review--header">
+              <img
+                className="review--image"
+                src={require(`../images/${review.image}`)}
+                alt=""
+              />
+              <div>
+                <h4>{review.name}</h4>
+                <p>{review.from}</p>
+              </div>
+            </header>
+            <div>
+              {review.problems.map((problem) => (
+                <span className="review--problem">{problem}</span>
+              ))}
+            </div>
+            <p className="review--content">{review.description}</p>
+          </div>
+        ))}
+
         <div className="review">
           <p className="review--content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-            itaque? Debitis dolore ducimus dolorum, quae temporibus laborum
-            impedit. Unde maxime quis obcaecati! Quas distinctio soluta
-            praesentium. Numquam corporis dolorum necessitatibus autem esse
-            nesciunt, dicta perferendis, culpa quod quae, error molestiae
-            nostrum accusamus recusandae quo reprehenderit maxime nulla! Numquam
-            corporis officiis, sed incidunt nisi praesentium voluptate nemo ab
-            porro eligendi eius quae laborum eum iure molestias nostrum iusto,
-            vitae, commodi neque dolores tempora unde reprehenderit earum.
-            Aliquid labore, quaerat similique laboriosam in cupiditate accusamus
-            velit quos sequi eos ex quibusdam laborum sit nobis enim assumenda
-            suscipit quis quas deserunt aut. Harum doloremque quis voluptates
-            necessitatibus maxime eos dolorum architecto provident sint eum
-            porro nam vero cupiditate neque, modi quidem officia, nihil,
-            sapiente sit alias nobis corporis velit? Molestiae, perspiciatis qui
-            blanditiis, error beatae repudiandae unde veniam nemo
-            exercitationem, mollitia est! Reiciendis deserunt soluta commodi
-            fugit molestiae in aliquam esse velit. Facere?
-          </p>
-          <p className="review--by">
-            <i>~ Vijay Verma</i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+            unde dicta qui vitae suscipit ea natus. Quis dolor odit optio.
           </p>
         </div>
-        <div className="review"></div>
-        <div className="review"></div>
-        <div className="review"></div>
+        <div className="review">
+          <p className="review--content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+            unde dicta qui vitae suscipit ea natus. Quis dolor odit optio.
+          </p>
+        </div>
       </div>
     </section>
   );
