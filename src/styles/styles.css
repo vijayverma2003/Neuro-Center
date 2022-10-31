@@ -109,10 +109,14 @@ nav {
 .review {
   background-color: rgba(216, 195, 165, 0.3764705882);
   border: 2px solid #d8c3a5;
-  box-shadow: 2px 2px 0 2px #d8c3a5;
   height: 360px;
   padding: 2rem 4.8rem;
   width: 360px;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.review:hover {
+  box-shadow: 2px 2px 0 2px #d8c3a5;
 }
 
 .review--content {
@@ -190,7 +194,6 @@ input,
 textarea {
   background-color: transparent;
   border: 1px solid #e85a4f;
-  box-shadow: 1px 1px 0 1px #e85a4f;
   color: rgba(0, 0, 0, 0.8);
   font-family: "Bebas Neue";
   font-size: 2rem;
@@ -201,6 +204,12 @@ textarea {
   padding: 0.8rem 1.4rem;
   resize: none;
   width: 100%;
+  transition: box-shadow 0.2s ease-out;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 1px 1px 0 1px #e85a4f;
 }
 
 .gallery {

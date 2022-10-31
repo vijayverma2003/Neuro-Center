@@ -146,10 +146,14 @@ nav {
 .review {
   background-color: $lightTertiaryColor;
   border: 2px solid $tertiaryColor;
-  box-shadow: 2px 2px 0 2px $tertiaryColor;
   height: 360px;
   padding: 2rem 4.8rem;
   width: 360px;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.review:hover {
+  box-shadow: 2px 2px 0 2px $tertiaryColor;
 }
 
 .review--content {
@@ -234,7 +238,6 @@ input,
 textarea {
   background-color: transparent;
   border: 1px solid $primaryColor;
-  box-shadow: 1px 1px 0 1px $primaryColor;
   color: $lightColor;
   font-family: $fontPrimary;
   font-size: 2rem;
@@ -245,6 +248,12 @@ textarea {
   padding: 0.8rem 1.4rem;
   resize: none;
   width: 100%;
+  transition: box-shadow 0.2s ease-out;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 1px 1px 0 1px $primaryColor;
 }
 
 // Gallery
