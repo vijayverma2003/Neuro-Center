@@ -6,7 +6,7 @@ import Hero from "./components/Hero";
 import AyurvedaDescription from "./components/AyurvedaDescription";
 import Reviews from "./components/Reviews";
 import MeetTheDoctor from "./components/MeetTheDoctor";
-import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <AyurvedaDescription />
       <Reviews />
       <MeetTheDoctor />
-      {/* <Footer /> */}
+      <Contact />
     </>
   );
 }

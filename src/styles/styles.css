@@ -4,7 +4,6 @@ html {
 
 body {
   background-color: #eae7dc;
-  box-sizing: border-box;
   margin: 0;
 }
 
@@ -37,8 +36,8 @@ h4 {
 }
 
 .container {
-  margin: 12rem auto;
   max-width: 1240px;
+  margin: 20rem auto;
 }
 
 button {
@@ -61,7 +60,7 @@ button:hover {
 }
 
 nav {
-  margin: 1rem auto;
+  margin: 2rem auto;
   max-width: 1240px;
 }
 
@@ -74,6 +73,7 @@ nav {
   align-items: center;
   display: flex;
   min-height: 80vh;
+  margin: 0 auto;
 }
 .hero .hero--description {
   margin-bottom: 4rem;
@@ -100,21 +100,21 @@ nav {
 }
 
 .reviews {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 1rem;
-  margin: 8rem 0;
+  display: flex;
   gap: 4rem;
+  justify-content: center;
+  margin: 8rem 0;
+  padding: 0 1rem;
 }
 
 .review {
-  width: 360px;
-  padding: 2rem 4.8rem;
-  height: 360px;
   background-color: rgba(216, 195, 165, 0.3764705882);
   border: 2px solid #d8c3a5;
   box-shadow: 2px 2px 0 2px #d8c3a5;
+  height: 360px;
+  padding: 2rem 4.8rem;
+  width: 360px;
 }
 
 .review--content {
@@ -122,8 +122,8 @@ nav {
 }
 
 .review--header {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
   opacity: 1;
@@ -141,13 +141,13 @@ nav {
 }
 
 .review--problem {
-  background-color: #e98074;
+  font-family: "Lora";
+  background-color: #d8c3a5;
   border-radius: 16px;
-  color: #eae7dc;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-right: 2rem;
   padding: 0.4rem 1rem;
-  font-size: 1.2rem;
 }
 
 .doctor--header {
@@ -155,20 +155,54 @@ nav {
 }
 
 .doctor--image {
-  width: 320px;
   height: 320px;
+  width: 320px;
 }
 
 .doctor--content {
   display: grid;
-  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
   gap: 10rem;
+  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
 }
 
 .doctor--description {
   font-size: 2rem;
   line-height: 2;
   max-width: 480px;
+}
+
+.contact {
+  display: grid;
+  gap: 12rem;
+  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+}
+
+.contact--box {
+  margin-top: 4rem;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: 1px solid #e85a4f;
+  box-shadow: 1px 1px 0 1px #e85a4f;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 4rem;
+  max-width: 360px;
+  outline: none;
+  padding: 0.8rem 1.4rem;
+  resize: none;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
