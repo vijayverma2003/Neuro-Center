@@ -4,6 +4,7 @@ html {
 
 body {
   background-color: #eae7dc;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -37,7 +38,8 @@ h4 {
 
 .container {
   max-width: 1240px;
-  margin: 20rem auto;
+  margin: 0 auto;
+  padding: 10rem 0;
 }
 
 button {
@@ -95,17 +97,13 @@ nav {
   color: rgba(0, 0, 0, 0.404);
 }
 
-.reviews--page {
-  margin: 14rem auto;
-}
-
 .reviews {
   align-items: center;
   display: flex;
   gap: 4rem;
   justify-content: center;
-  margin: 8rem 0;
   padding: 0 1rem;
+  margin-top: 8rem;
 }
 
 .review {
