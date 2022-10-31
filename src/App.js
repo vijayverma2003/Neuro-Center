@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <AyurvedaDescription />
-      <Gallery />
+      {/* <Gallery /> */}
       <Reviews />
       <MeetTheDoctor />
       <Contact />

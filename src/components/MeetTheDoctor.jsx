@@ -5,38 +5,22 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function MeetTheDoctor(props) {
-  // useEffect(() => {
-  //   gsap.set(".doctor--image", { transformOrigin: "center" });
-
-  //   gsap.fromTo(
-  //     ".doctor--image",
-  //     { scale: 0.8 },
-  //     {
-  //       scale: 1,
-  //       duration: 1.4,
-  //       ease: "Power3.easeOut",
-  //       scrollTrigger: {
-  //         trigger: ".doctor--page",
-  //         start: "-60%",
-  //       },
-  //     }
-  //   );
-
-  //   gsap.fromTo(
-  //     ".doctor--description",
-  //     { x: 400, opacity: 0 },
-  //     {
-  //       x: 0,
-  //       opacity: 1,
-  //       duration: 1.4,
-  //       ease: "Power3.easeOut",
-  //       scrollTrigger: {
-  //         trigger: ".doctor--page",
-  //         start: "-60%",
-  //       },
-  //     }
-  //   );
-  // }, []);
+  useEffect(() => {
+    gsap.fromTo(
+      [".doctor--header", ".doctor--image", ".doctor--description"],
+      { x: -200, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.4,
+        ease: "Power3.easeOut",
+        scrollTrigger: {
+          trigger: ".doctor--page",
+          start: "-80%",
+        },
+      }
+    );
+  }, []);
 
   return (
     <section className="container doctor--page">

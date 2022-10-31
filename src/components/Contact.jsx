@@ -11,7 +11,7 @@ function Contact(props) {
     });
 
     timeline.fromTo(
-      [".large--contact--text", ".contact--left", ".contact--right"],
+      [".large--contact--text", ".contact--left", "form"],
       { x: -400, opacity: 0 },
       { x: 0, opacity: 1, duration: 1.4, ease: "Power3.easeOut" }
     );
@@ -22,8 +22,7 @@ function Contact(props) {
       <div className="contact--left">
         <h1>Contact Us</h1>
         <p>
-          Feel free to contact us and we will get <br />
-          back to you as soon as we can.
+          Feel free to contact us and we will get back to you as soon as we can.
         </p>
         <div className="contact--box">
           <h4>Address</h4>

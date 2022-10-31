@@ -21,6 +21,9 @@ body {
   background-color: $bgColor;
   box-sizing: border-box;
   margin: 0;
+  font-family: $fontSecondary, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 // Typography
@@ -59,12 +62,36 @@ p {
   @extend %paragraph-style;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+}
+
 // Sections
 
 .container {
   max-width: 1240px;
   margin: 0 auto;
   padding: 10rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 10rem 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10rem 4rem;
+  }
 }
 
 // Buttons
@@ -101,6 +128,18 @@ nav {
   width: 60px;
 }
 
+@media screen and (max-width: 1024px) {
+  nav {
+    margin: 2rem 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    margin: 2rem 2.8rem;
+  }
+}
+
 // Hero
 
 .hero {
@@ -121,6 +160,24 @@ nav {
   opacity: 0.3;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    justify-content: center;
+
+    .hero--content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero--description,
+    .hero--heading {
+      text-align: center;
+    }
+  }
+}
+
 // Ayurveda Description
 
 .ayurveda--description {
@@ -132,6 +189,20 @@ nav {
   color: rgba(0, 0, 0, 0.404);
 }
 
+@media screen and (max-width: 540px) {
+  .ayurveda--description {
+    width: 100%;
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ayurveda--description {
+    line-height: 1.8;
+    font-size: 1.8rem;
+  }
+}
+
 // Reviews
 
 .reviews {
@@ -141,6 +212,7 @@ nav {
   justify-content: center;
   padding: 0 1rem;
   margin-top: 8rem;
+  max-height: 360px;
 }
 
 .review {
@@ -150,6 +222,7 @@ nav {
   padding: 2rem 4.8rem;
   width: 360px;
   transition: box-shadow 0.2s ease-out;
+  min-width: 180px;
 }
 
 .review:hover {
@@ -186,8 +259,72 @@ nav {
   border-radius: 16px;
   font-size: 1.2rem;
   font-weight: 700;
-  margin-right: 2rem;
+  margin-right: 1rem;
   padding: 0.4rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .review {
+    padding: 2rem 2.8rem;
+    height: 100%;
+  }
+
+  .review--image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .review--description,
+  .review--writer {
+    font-size: 1.4rem;
+  }
+
+  .review--writer--age,
+  .review--problem {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 1rem;
+    margin-top: 8rem;
+  }
+
+  .reviews--heading {
+    text-align: center;
+  }
+
+  .review {
+    padding: 2rem 2.8rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  .review--image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review--description,
+  .review--writer {
+    font-size: 1.8rem;
+  }
+
+  .review--writer--age,
+  .review--problem {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .reviews {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
 }
 
 // Meet Doctor
@@ -213,6 +350,44 @@ nav {
   max-width: 480px;
 }
 
+@media screen and (max-width: 1024px) {
+  .doctor--content {
+    gap: 8rem;
+  }
+
+  .doctor--description {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doctor--content {
+    grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+    justify-items: center;
+    gap: 4rem;
+  }
+
+  .doctor--description {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .doctor--header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .doctor--content {
+    gap: 0;
+  }
+
+  .doctor--image {
+    width: 100%;
+    max-height: 300px;
+  }
+}
+
 // Contact
 
 .contact {
@@ -223,6 +398,24 @@ nav {
 
 .contact--box {
   margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    gap: 8rem;
+    grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+    text-align: center;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact {
+  }
+
+  .contact--box {
+    margin-top: 4rem;
+  }
 }
 
 // Form
@@ -259,10 +452,11 @@ textarea:focus {
 // Gallery
 
 .gallery {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
-  transform: scale(0.8);
+  transform: scale(0.7);
   margin: 10rem 0;
+  width: 100%;
 }
 
 .gallery--heading {
@@ -273,11 +467,12 @@ textarea:focus {
 }
 
 .gallery--photo {
-  background-color: $lightPrimaryColor;
+  background-color: $lightTertiaryColor;
   position: absolute;
   object-fit: cover;
   border: 3px solid $tertiaryColor;
   box-shadow: 4px 4px 16px 4px rgba(217, 196, 166, 0.5);
+  transform-origin: center center;
 }
 
 .gallery--photo--1 {
@@ -335,4 +530,80 @@ textarea:focus {
   height: 380px;
   top: 36%;
   left: 12%;
+}
+
+@media screen and (max-height: 800px) {
+  .gallery {
+    scale: 0.8;
+  }
+
+  .gallery--photo--1 {
+    top: 50%;
+  }
+
+  .gallery--photo--2 {
+    top: 0%;
+  }
+
+  .gallery--photo--3 {
+    top: 7%;
+  }
+
+  .gallery--photo--4 {
+    top: 18%;
+  }
+
+  .gallery--photo--5 {
+    top: 50%;
+  }
+
+  .gallery--photo--6 {
+    top: 75%;
+  }
+
+  .gallery--photo--7 {
+    top: 75%;
+  }
+
+  .gallery--photo--8 {
+    top: 36%;
+  }
+}
+
+@media screen and (max-height: 720px) {
+  .gallery {
+    scale: 0.8;
+  }
+
+  .gallery--photo--1 {
+    top: 50%;
+  }
+
+  .gallery--photo--2 {
+    top: -6%;
+  }
+
+  .gallery--photo--3 {
+    top: 3%;
+  }
+
+  .gallery--photo--4 {
+    top: 18%;
+  }
+
+  .gallery--photo--5 {
+    top: 54%;
+  }
+
+  .gallery--photo--6 {
+    top: 80%;
+  }
+
+  .gallery--photo--7 {
+    top: 75%;
+  }
+
+  .gallery--photo--8 {
+    top: 36%;
+  }
 }
