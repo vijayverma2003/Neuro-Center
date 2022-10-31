@@ -7,6 +7,7 @@ import AyurvedaDescription from "./components/AyurvedaDescription";
 import Reviews from "./components/Reviews";
 import MeetTheDoctor from "./components/MeetTheDoctor";
 import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <AyurvedaDescription />
+      <Gallery />
       <Reviews />
       <MeetTheDoctor />
       <Contact />

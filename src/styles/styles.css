@@ -203,4 +203,83 @@ textarea {
   width: 100%;
 }
 
+.gallery {
+  min-height: 100vh;
+  position: relative;
+  transform: scale(0.8);
+  margin: 10rem 0;
+}
+
+.gallery--heading {
+  font-size: 30rem;
+  position: absolute;
+  color: rgba(216, 195, 165, 0.3764705882);
+  top: -12%;
+}
+
+.gallery--photo {
+  background-color: #e98074;
+  position: absolute;
+  object-fit: cover;
+  border: 3px solid #d8c3a5;
+  box-shadow: 4px 4px 16px 4px rgba(217, 196, 166, 0.5);
+}
+
+.gallery--photo--1 {
+  width: 400px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery--photo--2 {
+  width: 280px;
+  height: 200px;
+  top: 5%;
+  left: 30%;
+}
+
+.gallery--photo--3 {
+  width: 150px;
+  height: 140px;
+  top: 12%;
+  left: 52%;
+}
+
+.gallery--photo--4 {
+  width: 275px;
+  height: 215px;
+  top: 18%;
+  left: 67%;
+}
+
+.gallery--photo--5 {
+  width: 200px;
+  height: 160px;
+  top: 50%;
+  left: 67%;
+}
+
+.gallery--photo--6 {
+  width: 300px;
+  height: 220px;
+  top: 73%;
+  left: 50%;
+}
+
+.gallery--photo--7 {
+  width: 150px;
+  height: 140px;
+  top: 73%;
+  left: 35%;
+}
+
+.gallery--photo--8 {
+  width: 275px;
+  height: 380px;
+  top: 36%;
+  left: 12%;
+}
+
 /*# sourceMappingURL=styles.css.map */
